@@ -1,0 +1,21 @@
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    list-style-type: none;
+    min-width:30%;
+}
+
+.todo-item{
+    display:inline-block;
+    padding:0em 0.8em;
+}
+
+.completed{
+    text-decoration:line-through;
+    padding:0em 0.8em;
+    opacity:0.5;
+}

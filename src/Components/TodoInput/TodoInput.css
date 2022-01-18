@@ -1,0 +1,87 @@
+header{
+    font-size:1.5rem;
+}
+
+header,form{
+    min-height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding:1rem;
+    font-size:1rem;
+    border:none;
+    background: white;
+    outline: none;
+}
+
+form button {
+    color:#0093E9;
+    background:white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover { 
+    background: #0093E9;
+    color: white;
+}
+
+.todo{
+    margin:.5em;
+    color:black;
+    background: white;
+    font-size:1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:all 0.5s ease;
+}
+.todo li {
+    flex:1;
+}
+
+.trash, .complete{
+    background:#f35555;
+    color:white;
+    border: none;
+    font-size:1em;
+    padding:0.2em 0.4em;
+    cursor: pointer;
+}
+
+.complete{
+    background: #5ef5a4;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0.5;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border:none;
+    color:#0093E9;
+    outline: none;
+    width:10rem;
+    cursor: pointer;
+    padding:1rem;
+}
+
+.select{
+    margin-left:1em;
+    position: relative;
+    overflow: hidden;
+}
+.select::after{
+    content:"\25bc";
+    position:absolute;
+    top:0;
+    right:0;
+    background: #0093E9;
+    pointer-events: none;
+    padding:1rem;
+}
